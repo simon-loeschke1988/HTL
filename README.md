@@ -1,2 +1,10 @@
-# HTL
-HTL-Programme aus Aufgaben und Übungen und Mitschriften
+# HTL - Repo Aufbaulehrgang Informatik HTBLuVA Salzburg
+
+## Inhalt des Repository
+
+Dieses Repo enthält meine Mitschriften, Übungen, Schulprojekte an der HTBLuVA Salzburg.
+
+### Wintersemester 2021
+
+- Programmieren in C
+- Python
