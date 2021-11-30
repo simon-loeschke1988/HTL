@@ -14,7 +14,7 @@ int main ()
 	scanf("%lf",&c);
 	double w = b*b - 4*a*c;
 	printf("Wert w = %lf \n",w);
-	
+	//Wert w wird nur zum debugging ausgegeben.
 	if (w >= 0)
 	{
 		x1 = (-b + sqrt(w))/(2*a);
