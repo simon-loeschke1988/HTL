@@ -8,34 +8,35 @@ ist, wenn ja: Rückgabe 1, nein Rückgabe 0  Größe des Arrays wird übergeben.
 Form: int isNegative(int a[], int size)*/
 
 //Deklarationen
-int minimum(int a[], int groesse);
-const int SIZE = 10;
-int i, a[];
+
+
+// Funktionen
+int Minimum(int a[],int size);
 int main ()
 {
-	for(i=0;i<SIZE;i++){
-	 a[i]= rand() % 10;
-	 int x = minimum(a[i],SIZE);
-	 printf("Minimum: %d",x);
-	 printf("%ld \n",a[i]);
-	}
-
+	int min;
+	int i = 1;
+	int a[10];
+	int size= 9;
+	for(i=0;i<size;i++){
+	 a[i];
+	 Minimum(a[i],10);
+	 printf("%d",min);
+	 	}
 	
 
 return 0;
 }
 
-int minimum(int a[],int SIZE)
- {
-	int min=a[10], i;
-	for(i=1; i<SIZE; i++) {
-		if(a[i] < min) {
-			min = a[i];
+int Minimum(int a[], int size)
+{
+	int min,i,size;
+	for(i=0;i<size;i++)
+	{
+		if(a[i]<min)
+		{
+			min=a[i];
 		}
 	}
 	return min;
 }
-
-
-
-
