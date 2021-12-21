@@ -8,3 +8,5 @@ Dieses Repo enthält meine Mitschriften, Übungen, Schulprojekte an der HTBLuVA 
 
 - Programmieren in C
 - Python
+- Datenbanken und Verteilte Systeme
+- Projektentwicklung und Systemplanung
