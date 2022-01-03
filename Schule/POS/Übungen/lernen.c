@@ -9,19 +9,23 @@ int i;
 
 int main ()
 {
-    int size;
-           
-    printf("Geben Sie eine Zahl fuer size ein: \n");
-    scanf("%d",&size);
-    printf("size: %d\n",size);
-    printf("Wird dem Array uebergeben.\n");
+    int a;
+    double b;
+    long int c;
+    long double d;           
+    char e;
+    float f;
+    short g;
+    
 
-    int a[size];
-    printf("Der Array hat %d Elemente.\n",sizeof(a));
-    printf("%d\n",a[size]);
-
-
- 
+    
+    printf("Groesse int: %ld \n",sizeof(a));
+    printf("Groesse double: %ld \n",sizeof(b));
+    printf("Groesse long int: %ld \n",sizeof(c));
+    printf("Groesse long double: %ld \n",sizeof(d));
+    printf("Groesse char: %ld \n",sizeof(e));
+    printf("Groesse float: %ld \n",sizeof(f));
+    printf("Groesse short: %ld \n",sizeof(g));
     return 0;
 }
 
