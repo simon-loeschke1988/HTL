@@ -6,11 +6,14 @@
 
 int array[100];
 
+
 //Funktionen
 int menu();
 void hauptmenu();
 void zufallszahlen(int sz);
 void AusgabeZ(int sz);
+int maximum(int a[], int sz);
+
 
 int main()
 {
@@ -24,7 +27,6 @@ int menu()
     int x;
     do
     {
-        system("clear");
         hauptmenu();
         scanf("%d", &x);
         switch (x)
@@ -42,6 +44,8 @@ int menu()
         case 4:
             printf("4 Sortieren");
             break;
+        case 5:
+            maximum(array[100], 100);
         default:
             break;
         }
@@ -59,6 +63,8 @@ void hauptmenu()
     printf("3 Mittelwert\n");
     printf("---------------------\n");
     printf("4 Sortieren\n");
+    printf("---------------------\n");
+    printf("5 Maximum Berechnen\n");
     printf("---------------------\n");
     printf("9 Beenden\n");
     printf("---------------------\n");
@@ -93,5 +99,9 @@ void AusgabeZ(int sz)
     }
     printf("\n");
     //Warten bis eine Eingabe kommt, damit er ins Menü kommt
-    //scanf("%d", &i);
+}
+
+int maximum(int a[], int sz)
+{
+    int i;
 }
