@@ -10,3 +10,9 @@ Dieses Repo enthält meine Mitschriften, Übungen, Schulprojekte an der HTBLuVA 
 - Python
 - Datenbanken und Verteilte Systeme
 - Projektentwicklung und Systemplanung
+
+## Notes
+
+### Februar 2022
+
+ - Aktualisierung der Ordnerstruktur
