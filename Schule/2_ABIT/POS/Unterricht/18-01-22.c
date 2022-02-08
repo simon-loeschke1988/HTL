@@ -42,7 +42,10 @@ int menu()
             printf("3 Mittelwert");
             break;
         case 4:
-            printf("4 Sortieren");
+            int array[7],size;
+            printf("Geben Sie eine Array-Größe ein:\n");
+            scanf("%d",&size);
+            flip(array[7],size);
             break;
         case 5:
             maximum(array[100], 100);
@@ -62,7 +65,7 @@ void hauptmenu()
     printf("---------------------\n");
     printf("3 Mittelwert\n");
     printf("---------------------\n");
-    printf("4 Sortieren\n");
+    printf("4 Tauschen\n");
     printf("---------------------\n");
     printf("5 Maximum Berechnen\n");
     printf("---------------------\n");
@@ -105,3 +108,13 @@ int maximum(int a[], int sz)
 {
     int i;
 }
+void flip (int a[], int size)
+{
+	int i, zwischenSpeicher; //Zwischenspeicher nötig
+	for (i=0;i<size/2;i++)
+	{
+		zwischenSpeicher = a [i];
+		a[i] = a[size - i -1]; // da size = 7 mit 0-6.
+		a[size-i-1]= zwischenSpeicher;
+	};
+};
