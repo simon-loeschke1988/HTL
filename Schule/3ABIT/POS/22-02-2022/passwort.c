@@ -1,8 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <strings.h>
+#include <iostream.h>
 
-char Passwort[100];
+
+const int MAXANZ = 30;
+char Passwort[30];
 
 void GetEingabe();
 
@@ -28,4 +31,21 @@ int main()
 		}
 	}
 	return 0;
+}
+
+void GetEingabe(char Eingabe[])
+{
+    char c;
+    int i;
+    printf("Passwort:\n");
+    for (i=0;i<MAXANZ-1;i++)
+    {
+        Eingabe[i] = getch();
+        printf("*");
+        if (Eingabe[i]==13)
+        {
+            break;
+        }
+    Eingabe[i]=0;
+    }
 }
