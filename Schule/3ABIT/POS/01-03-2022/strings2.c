@@ -12,6 +12,10 @@ int main()
     scanf("%s", vorname);
     printf("\nNachname: \n");
     scanf("%s", nachname);
+    strncpy(kuerzel, nachname, 3);
+    kuerzel[3] = vorname[0];
+    kuerzel[4] = 0;
+    printf("\nKürzel: %s\n", kuerzel);
 
 
     return 0;
