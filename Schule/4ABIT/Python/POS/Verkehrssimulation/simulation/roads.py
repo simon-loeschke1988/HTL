@@ -1,16 +1,31 @@
-from .vehicle import *
+# 25.12.2022 roads begonnen
 
-class roads(vehicle):
+class roads:
+    '''roads: Klasse der Straßen'''
     def __init__(self) -> None:
-        super().__init__()
-        
+       self.__begin = None
+       '''__begin: Startpunkt der Straße'''
+       self.__end = None
+       '''__end: endpunkt der Straßen'''
+       
+       
     @property
-    def x(self):
-        return self.__x
+    def begin(self):
+        return self.__begin
     
-    @x.setter
-    def x(self,x):
-        self.__x= x
+    @property
+    
+    def end(self):
+        return self.__end
+    
+    @begin.setter
+    def begin(self,begin):
+        self.__begin= begin
+
+    @end.setter
+    def end(self,end):
+        self.__end = end
+        
         
 
 
