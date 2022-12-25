@@ -1,6 +1,12 @@
 class vehicle:
     def __init__(self) -> None:
         self.__x = 0    ## position along a road
+        
+        # 25.12.2022: velocity hinzugefügt.
+        
+        '''
+        v = velocity
+        '''
         self.__v = None
 
     # Getter-Methode für x     
