@@ -3,12 +3,15 @@ class vehicle:
         self.__x = 0    ## position along a road
         
         # 25.12.2022: velocity hinzugefügt.
+        # 25.12.2022: acceleration hinzugefügt
         
-        '''
-        v = velocity
-        '''
+   
         self.__v = None
-
+        ''' __v = velocity'''
+        self.__a = None
+        '''__a= acceleration'''
+        
+        
     # Getter-Methode für x     
     @property
     def x(self):
@@ -16,6 +19,14 @@ class vehicle:
     @property
     def v(self):
         return self.__v
+    
+    @property
+    def a(self):
+        return self.__a
+    
+    @a.setter
+    def a(self,a):
+        self.__a = a
     
     @x.setter
     def x(self, x):
